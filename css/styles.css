@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel Decorative');
+@import url('https://fonts.googleapis.com/css?family=Bilbo Swash Caps');
+@import url('https://fonts.googleapis.com/css?family=Dawning of a New Day');
+@import url('https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css');
+
+body {
+    overflow-x:hidden;
+
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    width: 10573px;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+
+    background-color: navy;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/Egretta_thula%2C_in_flight%2C_in_Tayrona_national_park.gif');
+    background-size: contain;
+    animation: animatedgradient 10s linear infinite normal;
+    /* filter: blur(2px) brightness(70%); */
+}
+
+@keyframes animatedgradient {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-3525px, 0, 0);
+    }
+
+}
+
+.foreground {
+    z-index: 1;
+    position: absolute;
+
+    color: white;
+    font-family: 'Cinzel Decorative';
+
+    height: 100%;
+    width: 100%;
+    
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+    top: 30%;
+    position: relative;
+    min-width: 578px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    position: relative;
+    vertical-align:middle;
+    border: 3px ridge;
+}
+
+.rectangle {
+    padding: 5px 30px 10px 120px; 
+    background-color: #7aa5bdad;
+    display: inline-block;    
+    text-align: left;
+    margin-left: -100px;
+    vertical-align:middle;
+
+    border: 3px outset #92bcd3ad;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.rectangle span {
+    font-size: 2em;
+}
+
+.subtext {
+    font-weight: normal;
+    font-family: 'Bilbo Swash Caps';
+    margin: 0;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.menu {
+    width: 100%;
+    background-color: #7aa5bdad;
+    text-align: center;
+    position: absolute;
+    min-width: 250px;
+
+    border: 3px outset #7aa5bdad;
+}
+
+ul {
+    margin: auto;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    padding: 1em;
+}
+
+a:hover {
+    transition: color 0.25s;
+    color: #88d2fa;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
